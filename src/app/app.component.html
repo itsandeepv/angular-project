@@ -1,0 +1,79 @@
+
+
+
+
+<style>
+@media (min-width:991px) {
+  .nk-sidebar+.nk-wrap>.nk-header-fixed,
+  .nk-sidebar-overlay+.nk-wrap>.nk-header-fixed {
+      left: 290px;
+  }
+  .nk-content {
+  position: absolute;
+  left: 290px;
+}
+}
+
+</style>
+
+
+<div class="custom-conatiner">
+<app-sidebar></app-sidebar>
+<div class="nk-wrap">
+  <app-header></app-header>
+  <section class="nk-content">
+    <main class="container-fluid">
+      <div class="card card-bordered card-preview">
+        <div class="card-inner">
+          <ul class="nav nav-tabs mt-n3" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" data-bs-toggle="tab" href="#tabItem1" aria-selected="true"
+                role="tab">Personal</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" data-bs-toggle="tab" href="#tabItem2" aria-selected="false" tabindex="-1"
+                role="tab">Security</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" data-bs-toggle="tab" href="#tabItem3" aria-selected="false" tabindex="-1"
+                role="tab">Notifications</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" data-bs-toggle="tab" href="#tabItem4" aria-selected="false" tabindex="-1"
+                role="tab">Connect</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tabItem1" role="tabpanel">
+              <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis
+                incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat
+                quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate
+                minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incid.
+              </p>
+            </div>
+            <div class="tab-pane" id="tabItem2" role="tabpanel">
+              <p>Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute
+                magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum
+                velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore
+                Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint
+                minim consectetur qui.</p>
+            </div>
+            <div class="tab-pane" id="tabItem3" role="tabpanel">
+              <p>Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident
+                laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit
+                et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo
+                est ea veniam consectetur.</p>
+            </div>
+            <div class="tab-pane" id="tabItem4" role="tabpanel">
+              <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+                proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua
+                amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa
+                ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+</div>
+<router-outlet></router-outlet>
